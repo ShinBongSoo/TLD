@@ -35,7 +35,7 @@
 
 #### 해결) http://cheolgoon.tistory.com/84
       -> $ chown 사용자:그룹 디렉토리명
-
+      -> $ setsebool -P allow_ftpd_full_access on
 #### 이슈2) 디렉토리 목록 불러오지 못하는 경우 ( 226 transfer done( but failed to open directory)
       -> selinux 기능으로 인한( selinux란 프로세스의 접근제어명령에 대해서 억제, 기록, 탐지에 필요한 기능 )
 
